@@ -11,3 +11,12 @@ var submitBtn = document.getElementById("submit");
 var startBtn = document.getElementById("start");
 var initialsEl = document.getElementById("initials");
 var feedbackEl = document.getElementById("feedback");
+
+
+//Funtion to start Challenge: hide splash screen, unhide questions section, start timer, show starting time
+function startChallege() {
+    var splashScreenEl = document.getElementById("splash-screen");
+    splashScreenEl.setAttribute("class", "hide");
+    
+
+}

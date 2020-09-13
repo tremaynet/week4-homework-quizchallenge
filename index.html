@@ -1,45 +1,47 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Quiz Challenge</title>
+    <title>Coding Challenge</title>
+
 </head>
+
 <body>
-    <div class="scores"><a href="scores.html">View Highscores</a></div>
-
-    <div class="timer">Time: <span id="time">0</span></div>
-
-    <div class="wrapper">
-        <div id="start-screen" class="start">
-            <h1>Quiz Challenge</h1>
-            <p>
-                Keep in mind that incorrect answers will penalize your
-                time by 5 seconds!
-            </p>
-            <button id="start">Start Quiz</button>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <div class="scores" class="col-md-11"><a href="highscores.html">High Score</a></div>
+            <div class="timer" class="col-md-1">Time: <span id="time">0</span></div>
         </div>
-
-        <div id="questions" class="hide">
+        <div class="wrapper">
+            <dive class="container-fluid">
+                <div class="start" id="splash-screen" class="col-md-9 ml-auto"></div>
+                <h1>Quiz Challenge</h1>
+                <p>
+                    Wrong answers will result in a five second penality!!
+                </p>
+                <button id="start" class="col-md-3 ml-auto">Begin Quiz</button>
+        </div>
+        <div id="questions" class="hide" class="col-md-6 ml-auto">
             <h2 id="question-title"></h2>
-            <div id="choices" class="choices"></div>
-        </div>
+            <div class="choices" id="choices" class="col-md-6 ml-auto"></div>
 
-        <div id="end-screen" class="hide">
-            <h2>All done!</h2>
-            <p>Your final score is <span id="final-score"></span>.</p>
-            <p>
-                Enter initials: <input type="text" id="initials" max="3" />
-                <button id="submit">Submit</button>
-            </p>
         </div>
-
-        <div id="feedback" class="feedback hide"></div>
     </div>
-
+    <div id="end-screen" class="hide" class="col-sm-12">
+        <h2>All done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+            Enter initials: <input type="text" id="initials" max="3" />
+            <button id="submit">Submit</button>
+        </p>
+    </div>
+    </div>
+    <div id="feedback" class="feedback hide"></div>
+    </div>
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/logic.js"></script>
 </body>
