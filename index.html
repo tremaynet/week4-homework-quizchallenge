@@ -11,38 +11,42 @@
 </head>
 
 <body>
-    <div class="modal-body">
+    <!-- Start header -->
+    <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
-            <div class="scores" class="col-md-11"><a href="highscores.html">High Score</a></div>
-            <div class="timer" class="col-md-1">Time: <span id="time">0</span></div>
+            <div id="highscore" class="nav-item nav-link"> View High Scores</div>
+            <h1 id="navbar-title">Quiz Challenge</h1>
+            <table id=timers style="visibility: hidden;">
+                <tr>
+                    <td> Time left in Game: </td>
+                    <td> <span id="gameTimer" class="nav-item"></span> </td>
+                </tr>
+                <tr>
+                    <td>Time left for Question:</td>
+                    <td> <span id="quesTimer" class="nav-item"></span> </td>
+                </tr>
+            </table>
         </div>
-        <div class="wrapper">
-            <dive class="container-fluid">
-                <div class="start" id="splash-screen" class="col-md-9 ml-auto"></div>
-                <h1>Quiz Challenge</h1>
-                <p>
-                    Wrong answers will result in a five second penality!!
-                </p>
-                <button id="start" class="col-md-3 ml-auto">Begin Quiz</button>
         </div>
-        <div id="questions" class="hide" class="col-md-6 ml-auto">
-            <h2 id="question-title"></h2>
-            <div class="choices" id="choices" class="col-md-6 ml-auto"></div>
-
-        </div>
+    </nav>
+    <!-- end header -->
+    <!-- start Content -->
+    <div class="container-fluid">
+        <!-- need a place for the intro instructions and quiz -->
+        <section id="details"> </section>
     </div>
-    <div id="end-screen" class="hide" class="col-sm-12">
-        <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
-        <p>
-            Enter initials: <input type="text" id="initials" max="3" />
-            <button id="submit">Submit</button>
-        </p>
-    </div>
-    </div>
-    <div id="feedback" class="feedback hide"></div>
-    </div>
-    <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/logic.js"></script>
+    <!-- End Content -->
+    <!-- Start Footer -->
+    <nav class="navbar fixed-bottom footer">
+        <div class="footer-text">TTPS</div>
+    </nav>
+    <!-- End Footer -->
+    <!-- read in file containing questions for quiz -->
+    <script src='./questions.js'></script>
+    <!-- read in javascript file  -->
+    <script src='./script.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
