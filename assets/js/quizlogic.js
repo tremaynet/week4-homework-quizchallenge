@@ -35,12 +35,12 @@ function init() {
     // creates Heading element for main page
     let heading = document.createElement("p");
     heading.setAttribute("id", "main-heading");
-    heading.textContent = "This game gives you the opportunity to take a time quiz!";
+    heading.textContent = "This challenge allows you to take a timed quiz on JavaScript or jQuery!";
 
     // creates elements with the instructions for the game
     let instructions = document.createElement("p");
     instructions.setAttribute("id", "instructions");
-    instructions.textContent = " You will have 5 seconds to answer each question. If you answer correctly you will score points. The quicker you answer the more points you will score. If you score incorrectly you will not lose points, but you will be penalized time.";
+    instructions.textContent = "Selecting an incorrect answer will result in a time penalty!";
 
     // adding more question - this should move into loop or function
     // creates button to start the game
