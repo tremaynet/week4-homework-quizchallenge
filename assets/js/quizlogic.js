@@ -9,7 +9,7 @@ let timerTab = document.querySelector("#timers");
 // let questionEl = document.querySelector("#question")
 // let answersListEl = document.querySelector("#answer-list")
 
-// set global variables - how do we move these into localized
+// set global variables 
 var test = false;
 var score = 0;
 var quiz = {};
@@ -22,6 +22,10 @@ var gameInterval;
 var questionDuration = 15;
 var questionSecElapsed = 0;
 var questionInterval;
+
+// sound effects
+var sfxRight = new Audio("assets/sfx/correct.wav");
+var sfxWrong = new Audio("assets/sfx/incorrect.wav");
 
 // draw instruction
 init();
@@ -192,11 +196,14 @@ function scoreAnswer(cur) {
         if (selectedItem === cur.answer) {
             // if (test) { console.log("correct answer");}
             score += questionDuration - questionSecElapsed;
-            //TODO music 
+            sfxRight.play();
+    
         } else {
             if (test) { console.log("wrong answer"); }
             //penelty for being wrong
             gameDuration -= 10;
+            sfxWrong.play();
+        
         }
         if (test) { console.log("sselected ", selectedItem); }
         showAnswers(cur);
@@ -204,7 +211,7 @@ function scoreAnswer(cur) {
     }
 }
 
-// TODO incomplete does not disply the correct color!!!! arghh
+// 
 function showAnswers(cur) {
     if (test) { console.log("--- showAnswer ---"); }
     // if (test) { console.log("sa length",cur.choices.length);}
