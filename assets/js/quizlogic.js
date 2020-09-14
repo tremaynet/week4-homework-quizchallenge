@@ -425,7 +425,7 @@ function highScores() {
 
     function clearStorage() {
     window.localStorage.clear();
-    document.getElementById("#main-heading")
+    //document.body;
  };  
 
      
