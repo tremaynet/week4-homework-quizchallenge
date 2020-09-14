@@ -425,9 +425,10 @@ function highScores() {
 
     function clearStorage() {
     window.localStorage.clear();
-    document.getElementById("<p>").innerHTML = "";
+    p.innerHTML = "";
+    };
     //document.body;
- };  
+      
 
      
 }
