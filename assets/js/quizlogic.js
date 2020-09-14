@@ -425,10 +425,10 @@ function highScores() {
 
     function clearStorage() {
     window.localStorage.clear();
+    document.getElementById("#main-heading")
  };  
 
      
 }
-
 
 highscoreDiv.addEventListener("click", highScores);
