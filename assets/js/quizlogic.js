@@ -335,6 +335,7 @@ function endOfGame() {
     mainEl.appendChild(initialsInput);
     mainEl.appendChild(par);
     mainEl.appendChild(playAgain);
+  
 
     playAgain.addEventListener("click", init);
 
@@ -411,6 +412,23 @@ function highScores() {
     mainEl.appendChild(playAgain);
 
     playAgain.addEventListener("click", init);
+
+    // creates button to clear Scores from local storage
+    let clearScore = document.createElement("button");
+    clearScore.setAttribute("id", "clearScore");
+    clearScore.setAttribute("class", "btn btn-secondary");
+    clearScore.textContent = "Clear High Score";
+
+    mainEl.appendChild(clearScore);
+
+    clearScore.addEventListener("click", clearStorage);
+
+    function clearStorage() {
+    window.localStorage.clear();
+ };  
+
+     
 }
+
 
 highscoreDiv.addEventListener("click", highScores);
