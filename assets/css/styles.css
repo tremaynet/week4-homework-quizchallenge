@@ -53,19 +53,17 @@ button {
         color: #666;
     }
 
-.right {
-}
 
 #details {
     /* background-color: #73919b;   */
     background-color: #b6d7e2;
     /* provides spacing between the top and bottom nav bars and the content */
-    margin-top: 20px;
+    margin-top: 200px;
     margin-bottom: 80px;
     /* provide spaceing around the text */
     padding: 40px;
+    text-align: center;
 }
-
 
 li {
     height: 50px;
@@ -87,10 +85,6 @@ li {
     float: left;
     padding-right: 1em;
     padding-top: 0.25em;
-}
-
-#startQuiz {
-    /* TODO style buttom */
 }
 
 .footer {
