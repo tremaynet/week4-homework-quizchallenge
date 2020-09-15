@@ -407,7 +407,7 @@ function highScores() {
     let playAgain = document.createElement("button");
     playAgain.setAttribute("id", "playAgain");
     playAgain.setAttribute("class", "btn btn-secondary");
-    playAgain.textContent = "Play!";
+    playAgain.textContent = "Play Again?";
 
     mainEl.appendChild(playAgain);
 
@@ -425,7 +425,7 @@ function highScores() {
 
     function clearStorage() {
     window.localStorage.clear();
-    p.innerHTML = "";
+    highScores.innerHTML = "";
     };
     //document.body;
       
