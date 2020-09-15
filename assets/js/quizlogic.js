@@ -413,7 +413,7 @@ function highScores() {
 
     playAgain.addEventListener("click", init);
 
-    // creates button to clear Scores from local storage
+    // creates button to clear Scores from local storage and information from screen
     let clearScore = document.createElement("button");
     clearScore.setAttribute("id", "clearScore");
     clearScore.setAttribute("class", "btn btn-secondary");
