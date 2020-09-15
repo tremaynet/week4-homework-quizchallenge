@@ -1,6 +1,6 @@
 # week4-homework-quizchallenge
 
-![](readmeimg\startscreen.png)
+![](readmeimg/startscreen.png)
 
 
 
