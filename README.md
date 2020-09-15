@@ -16,5 +16,5 @@
 
 
 
-![](rassets/img/fav.png)
+![](assets/img/fav.png)
  
